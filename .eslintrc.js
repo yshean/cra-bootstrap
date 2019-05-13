@@ -53,3 +53,28 @@ devDependencies: {
     "prettier": "^1.17.0"
 }
 */
+
+/*
+settings.json
+{
+  "editor.formatOnSave": true,
+  "prettier.tslintIntegration": true,
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": false,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.tslint": true
+  // },
+  // "editor.fontFamily": "Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "workbench.colorTheme": "Night Owl",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
+}
+*/
