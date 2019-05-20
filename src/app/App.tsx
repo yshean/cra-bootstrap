@@ -1,31 +1,20 @@
 import React from "react";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "@apollo/react-hooks";
 
-import logo from "app/logo.svg";
-import "app/App.css";
+import Home from "app/Home";
 
-const App: React.FC = () => {
+const client = new ApolloClient({
+  uri: "https://m3507x64l8.sse.codesandbox.io/",
+  resolvers: {}
+});
+
+const Apollo: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h1>
-          Hello fdsfdsfdsfdsfdsfdsfsdfdsfdsfdsfdsfdsfdsfdsfdsffsd fdsfdsfdsfsfd.
-          Edit <code>src/App.tsx</code> and save to reload.
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <Home />
+    </ApolloProvider>
   );
 };
 
-export default App;
+export default Apollo;
